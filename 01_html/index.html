@@ -5,53 +5,65 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Roots</title>
     <!-- CSSファイル -->
-<link rel="stylesheet" media="all" href="css/ress.min.css" />
-<link rel="stylesheet" media="all" href="css/style.css" />
+<link rel="stylesheet" media="all" href="../03_css/ress.min.css" />
+<link rel="stylesheet" media="all" href="../03_css/style.css" />
+
 <!-- jsファイル -->
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/style.js"></script>
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="img/favicon.png">
     
 </head>
 <body>
 <header>    
 <div class="container">
-    <div class="left">
-        <div class="header">
-            <div class="head">
-		        <div class="Rogo"><img src="../02_img/roots_kun.png" alt="Instagram"></div>
-            </div>
+    <div class="row">
+        <div class="head">
+	        <div class="Rogo"><img src="../02_img/roots_kun.png" alt="Instagram"></div>
         </div>
     </div>
-    <div class="light">
-        <div class="header">
-            <nav> 
-            <div class="link">
-                <ul>
-                    <li><a href="../01_html/index.html">Home</a></li>
-                    <li><a href="../01_html/blog.html">BLOG</a></li>
-                    <li><a href="../01_html/contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-            </nav>
+    <div class="row">
+        <nav> 
+        <div class="link">
+            <ul>
+                <div class="linkin"><li><a class="link1a" href="../01_html/index.html">Home</a></li></div>
+                <div class="linkin"><li><a class="link1a" href="../01_html/blog.html">BLOG</a></li></div>
+                <div class="linkin"><li><a class="link1a" href="../01_html/contact.html">CONTACT</a></li></div>                    
+            </ul>
         </div>
+        </nav>
+    </div>
+    <div class="row">
         <div class="header">
-            <div class="humberger"><span></span><span></span><span></span></div>
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu_btn_check">
+                <label for="menu_btn_check" class="menu-btn"><span></span></label>
+                <label for="menu_btn_check" class="menu-mask"></label>
+                <div class="hamburger-contents">
+                    <label for="menu_btn_check" class="menu-close"><i class="fas fa-times"></i><span>閉じる</span></label>
+                    <h2>MENU</h2>
+                    <ul class="burger-wrap">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 </header>
 <main>
 <div class="container">
+<div class="contentA">
     <div class="main_content">
-        <div class="mainImage"><img src="../02_img/TitleRogo.png" alt="メイン画像"></div>
-        <div class="scroll"><img src="../02_img/Scroll.png" alt="スクロール画像"></div>
+        <img class="mainImage" src="../02_img/TitleRogo.png" alt="メイン画像">
+        <img class="scroll" src="../02_img/Scroll.png" alt="スクロール画像">
     </div>
 </div>
 
-<div class="container">
+<div class="contentB">
     <div class="main_content">
         <div class="subImage"><img src="../02_img/What_MyRoots.png" alt="サブ画像"></div>
         <div class="explain">
@@ -62,16 +74,19 @@
         </div>
     </div>    
 </div>
-<div class="container">
+<div class="contentC">
 	<div class="main_content">
         <div class="blog"><h2>BLOG</h2></div>
-	    <div class="blogIcon"><a href="../01_html/blog.html"><img src="../02_img/BlogIcon.png"></a></div>
-        <div class="blogIcon"><a href="../01_html/blog.html"><img src="../02_img/BlogIcon.png"></a></div>
-        <div class="blogIcon"><a href="../01_html/blog.html"><img src="../02_img/BlogIcon.png"></a></div>
+	    <div class="blogIcon">
+            <a class="blogIconA" href="../01_html/blog.html"><img class="blogIconA" src="../02_img/BlogIcon.png"></a>
+            <a class="blogIconA" href="../01_html/blog.html"><img class="blogIconA" src="../02_img/BlogIcon.png"></a>
+            <a class="blogIconA" href="../01_html/blog.html"><img class="blogIconA" src="../02_img/BlogIcon.png"></a>
+        </div>
         <div class="more">
             <a href="../01_html/blog.html">more</a>
         </div>
     </div>
+</div>
 </div>
 </main>
 <footer>
@@ -80,7 +95,6 @@
         <p>権利関係や様々なしがらみ、社会性などを記入する爛</p>
     </div>
 </div>
-</footer>
 <div class="copyright">
     <div class="container">
         <div class="row">
@@ -90,6 +104,8 @@
         </div>
     </div>
 </div>
-<p id="pagetop"><a href="#">TOP</a></p>    
+<p id="pagetop"><a href="#">TOP</a></p>
+</footer>
+    
 </body>
 </html>
